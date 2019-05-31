@@ -11,7 +11,7 @@
 <body>
 <div style="text-align: center;">
 	<a href="${path}/">main</a>
-	<a href="${path}/gugu.do}">구구단</a>
+	<a href="${path}/gugu.do?dan=3}">구구단</a>
 	<a href="${path}/gugu.do}">구구단</a>
 	<a href="${path}/test.do}">테스트</a>
 	<a href="${path}/member/list.do}">회원관리</a>
