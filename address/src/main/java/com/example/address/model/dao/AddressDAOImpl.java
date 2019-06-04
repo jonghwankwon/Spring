@@ -5,14 +5,15 @@ import java.util.List;
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
+import org.springframework.stereotype.Repository;
 
 import com.example.address.model.dto.AddressDTO;
 
+@Repository
 public class AddressDAOImpl implements AddressDAO {
 	
 	@Inject
 	SqlSession sqlSession;
-
 	@Override
 	public List<AddressDTO> addressList() {
 		return sqlSession.selectList("address.addressList");
