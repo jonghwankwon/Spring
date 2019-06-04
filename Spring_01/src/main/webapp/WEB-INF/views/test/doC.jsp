@@ -5,11 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<%@ include file="include/header.jsp" %>
+<%@ include file="../include/header.jsp" %>
 </head>
 <body>
-<%@ include file="include/menu.jsp" %>
+<%@ include file="../include/menu.jsp" %>
 <hr>
-<h2>${message}</h2>
+상품명 : ${map.product.name}<br>
+가   격 : ${map.product.price}<br>
 </body>
 </html>
