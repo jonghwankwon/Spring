@@ -10,8 +10,7 @@
 <body>
 	<%@ include file="../include/menu.jsp"%>
 	<h2>회원 목록</h2>
-	<input type="button" value="회원 등록" 
-		onclick="location.href=${path}/member/write.do">
+	<input type="button" value="회원 등록"  onclick="location.href='${path}/member/write.do'">
 	<table border="1" width="700px">
 		<tr>
 			<td>아이디</td>
@@ -24,7 +23,8 @@
 				<td>${row.userid}</td>
 				<td><a href="${path}/member/view.do?userid=${row.userid}">${row.name}</a></td>
 				<td>${row.email}</td>
-				<td>${row.join_date}</td>
+				<td><fmt:formatDate value="${row.join_date}" pattern="yyyy-MM-dd HH:mm:ss"/></td> <!-- 형식 지정 -->
+				<%-- <td>${row.join_date}</td> <!-- 시스템 날짜가 출력 --> --%>
 			</tr>
 		</c:forEach>
 	</table>
