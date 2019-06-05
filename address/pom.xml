@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion> <!-- pom 모델 버전 -->
 	<groupId>com.example</groupId> <!-- 프로젝트의 소유자인 조직, 기관 id(네임스페이스) -->
-	<artifactId>address</artifactId> <!-- 프로젝트 id -->
+	<artifactId>spring01</artifactId> <!-- 프로젝트 id -->
 	<packaging>war</packaging>  <!-- 패키징 방식, 기본값 jar, 웹애플리케이션의 경우 war -->
 	<version>1.0.0</version> <!-- 프로젝트 버전 -->
 	<properties>

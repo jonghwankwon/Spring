@@ -4,7 +4,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 다른 mapper와 중복되지 않도록 네임스페이스 기재 -->
-<mapper namespace="sample">
+<mapper namespace="product">
+	
+	<!-- 검색 기능 -->
+	<select id="list_product" resultType="productDto">
+	select * from product
+	order by product_name
+	</select>	
+	
 	
 </mapper>
 

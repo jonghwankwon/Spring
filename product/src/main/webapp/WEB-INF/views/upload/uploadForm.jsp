@@ -6,6 +6,14 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <%@ include file="../include/header.jsp"%>
+<style type="text/css">
+iframe {
+	width: 400px;
+	height: 200px;
+	border: 1px;
+	border-style: solid;
+}
+</style>
 </head>
 <body>
 	<%@ include file="../include/filemenu.jsp"%>

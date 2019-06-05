@@ -4,40 +4,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 다른 mapper와 중복되지 않도록 네임스페이스 기재 -->
-<mapper namespace="address_book">
+<mapper namespace="address">
 	
-	<!-- 회원 목록 -->
-	<select id="addressList" resultType="addressDto"> <!-- mybatis 매퍼 -->
-	select * from address_book
-	order by name
-	</select>
-	
-	<!-- 추가-->
-	<insert id="insertAddress">
-	insert into address_book (gender,name,tel,address)
-	values (#{gender}, #{name}, #{tel}, #{address})
-	</insert>
-	
-	<!-- 상세정보 조회 -->
-	<select id="viewAddress" resultType="addressDto">	<!-- memberDto = alias처리 -->
-	select * from address_book
-	where name=#{name}
-	</select>
-
-	<!-- 회원 정보 수정 -->
-	<update id="updateAddress">
-		update address_book
-		name=#{name},
-		tel=#{tel},
-		address=#{address},
-		where name=#{name}
-	</update>
-	
-	<!-- 삭제 -->
-	<delete id="deleteMember">
-	delete from address_book
-	where name = #{name}
-	</delete>
 </mapper>
 
 

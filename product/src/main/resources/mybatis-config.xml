@@ -5,6 +5,7 @@
 <configuration>
 
 	<typeAliases>
+	<typeAlias alias="productDto" type="com.product.spring.model.shop.dto.ProductDTO" /><!-- 별칭 -->
 	</typeAliases>
 
 </configuration>
